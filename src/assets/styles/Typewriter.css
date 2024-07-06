@@ -1,0 +1,26 @@
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 0.15em solid #5ab2ff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  width: fit-content;
+  padding-right: 0.1em;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  height: 1.5rem;
+}
+
+.typewriter h1.blink {
+  animation: blink-caret 0.7s step-end infinite;
+}
+
+@keyframes blink-caret {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #5ab2ff;
+  }
+}
