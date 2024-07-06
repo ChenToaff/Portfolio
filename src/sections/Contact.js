@@ -37,7 +37,12 @@ const Contact = () => {
         >
           {emailText}
         </div>
-        <div className="my-3 md:text-3xl text-gray-400">(Click to copy)</div>
+        <div
+          onClick={copyEmailToClipboard}
+          className="my-3 md:text-3xl text-gray-400 cursor-pointer"
+        >
+          (Click to copy)
+        </div>
       </div>
     </section>
   );

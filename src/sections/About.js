@@ -36,26 +36,28 @@ const About = () => {
               src={profilePic}
               className="mx-auto my-4 w-48 h-48 rounded-full"
             />
-            <p className="m-auto">
+            <p className="m-auto text-justify">
               Hi! I'm Chen, a software developer who loves to transform ideas
               into reality using code. I enjoy being challenged and engaging
               with projects that require me to work outside my comfort zone and
               knowledge set.
             </p>
           </div>
-          <div className="mb-0">
+          <div className="mb-0 my-7 md:my-0">
             <div className="sm-title">
-              <h1 className="text-6xl font-bold">Skills</h1>
-              <p className="my-3">
+              <h1 className="text-center text-6xl font-bold">Skills</h1>
+              <p className="my-3 text-justify">
                 Here you can see my skills, I try to update my knowledge every
                 day and experience new technologies.
               </p>
             </div>
-            {skills.map((skill) => (
-              <span key={skill} className="skill-custom hover:scale-110">
-                {skill}
-              </span>
-            ))}
+            <div className="flex flex-wrap justify-evenly">
+              {skills.map((skill) => (
+                <span key={skill} className="skill-custom hover:scale-110">
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>

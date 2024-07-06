@@ -17,7 +17,7 @@ const Project = ({ project, reverse }) => {
       <div className="w-full md:w-1/2 p-4">
         <h3 className="text-xl font-semibold">{project.title}</h3>
         <p className="text-gray-700 text-justify">{project.description}</p>
-        <div className="items-left text-left my-2">
+        <div className="flex flex-wrap items-left my-2 justify-evenly">
           {project.technologies?.map((skill) => (
             <span key={skill} className="skill-custom hover:scale-110">
               {skill}
